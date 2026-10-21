@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: icross-tj
+    runtime: go
+    plan: free
+    buildCommand: go build -o app .
+    startCommand: ./app
