@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="announcement">Доставка по Худжанду бесплатно при заказе от 500 смн <span>↗</span></div>
@@ -87,7 +87,7 @@
   </aside>
 
   <div class="modal-wrap" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
-    <div class="checkout-modal"><button class="close-button modal-close" aria-label="Закрыть">×</button><div class="checkout-content"><p class="eyebrow">ПОСЛЕДНИЙ ШАГ</p><h2 id="checkout-title">Оформить заказ<span>.</span></h2><p class="modal-intro">Оставь контакты — мы подтвердим заказ и согласуем доставку.</p>
+    <div class="checkout-modal"><button class="close-button modal-close" aria-label="Закрыть">×</button>    <div class="checkout-content"><p class="eyebrow">ПОСЛЕДНИЙ ШАГ</p><h2 id="checkout-title">Оформить заказ<span>.</span></h2><p class="modal-intro">Оставь контакты — мы подтвердим заказ и согласуем доставку.</p><p class="static-hosting-note" id="static-hosting-note" hidden>Эта версия сайта размещена на GitHub Pages: каталог и корзина работают, но Go-сервер для приёма заказов ещё не подключён.</p>
       <form id="checkout-form">
         <label>Как к тебе обращаться<input name="name" required placeholder="Твоё имя" autocomplete="name"></label>
         <div class="form-row"><label>Номер телефона<input name="phone" required type="tel" placeholder="+992 900 00 00 00" autocomplete="tel"></label><label>Email <small>(необязательно)</small><input name="email" type="email" placeholder="you@email.com" autocomplete="email"></label></div>
@@ -99,6 +99,6 @@
       </form>
     </div>
   </div>
-  <script src="/app.js" defer></script>
+  <script src="./app.js" defer></script>
 </body>
 </html>

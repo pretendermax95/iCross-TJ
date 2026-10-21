@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "name": "Air Max Pulse",
+    "brand": "Nike",
+    "category": "running",
+    "price": 1290,
+    "oldPrice": 1490,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
+    "tag": "ХИТ",
+    "colors": ["#f5533d", "#171717"],
+    "sizes": [39, 40, 41, 42, 43, 44]
+  },
+  {
+    "id": 2,
+    "name": "Campus 00s",
+    "brand": "Adidas",
+    "category": "lifestyle",
+    "price": 990,
+    "oldPrice": 1190,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
+    "tag": "−17%",
+    "colors": ["#e8c99b", "#343434"],
+    "sizes": [38, 39, 40, 41, 42, 43]
+  },
+  {
+    "id": 3,
+    "name": "574 Core",
+    "brand": "New Balance",
+    "category": "lifestyle",
+    "price": 1150,
+    "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=900&q=85",
+    "tag": "НОВИНКА",
+    "colors": ["#8a9aaa", "#7f9875"],
+    "sizes": [39, 40, 41, 42, 43, 44, 45]
+  },
+  {
+    "id": 4,
+    "name": "Dunk Low Retro",
+    "brand": "Nike",
+    "category": "lifestyle",
+    "price": 1390,
+    "oldPrice": 1590,
+    "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85",
+    "colors": ["#e8e3d7", "#496288"],
+    "sizes": [38, 39, 40, 41, 42, 43]
+  },
+  {
+    "id": 5,
+    "name": "Ultraboost Light",
+    "brand": "Adidas",
+    "category": "running",
+    "price": 1690,
+    "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=900&q=85",
+    "tag": "ПРЕМИУМ",
+    "colors": ["#292929", "#e6e6e6"],
+    "sizes": [40, 41, 42, 43, 44, 45]
+  },
+  {
+    "id": 6,
+    "name": "574 Legacy",
+    "brand": "New Balance",
+    "category": "lifestyle",
+    "price": 1250,
+    "image": "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85",
+    "colors": ["#d1b59b", "#707d87"],
+    "sizes": [39, 40, 41, 42, 43]
+  },
+  {
+    "id": 7,
+    "name": "Air Force 1 '07",
+    "brand": "Nike",
+    "category": "lifestyle",
+    "price": 1450,
+    "oldPrice": 1650,
+    "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=85",
+    "tag": "−12%",
+    "colors": ["#f2f0ea", "#222222"],
+    "sizes": [38, 39, 40, 41, 42, 43, 44]
+  },
+  {
+    "id": 8,
+    "name": "Forum Low",
+    "brand": "Adidas",
+    "category": "lifestyle",
+    "price": 1090,
+    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=85",
+    "colors": ["#e5e1d6", "#a45f47"],
+    "sizes": [39, 40, 41, 42, 43, 44]
+  }
+]

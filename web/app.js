@@ -12,6 +12,7 @@ const formatPrice = (price) => `${price.toLocaleString("ru-RU")} смн`;
 let products = [];
 let activeFilter = "all";
 let cart = loadCart();
+let staticHosting = false;
 
 function loadCart() {
   try {
@@ -31,9 +32,24 @@ function saveCart() {
 
 async function loadProducts() {
   try {
-    const response = await fetch("/api/products");
-    if (!response.ok) throw new Error("Не удалось загрузить каталог");
-    products = await response.json();
+    const response = await fetch("./api/products");
+    if (response.ok) {
+      products = await response.json();
+    } else {
+      throw new Error("Каталог загружен из статичной версии");
+    }
+  } catch {
+    try {
+      const response = await fetch("./products.json");
+      if (!response.ok) throw new Error("Не удалось загрузить каталог");
+      products = await response.json();
+      staticHosting = location.hostname.endsWith(".github.io");
+    } catch (error) {
+      grid.innerHTML = `<p class="empty-results">${error.message}. Обновите страницу.</p>`;
+      return;
+    }
+  }
+  try {
     renderProducts();
     renderCart();
   } catch (error) {
@@ -182,10 +198,15 @@ document.querySelectorAll(".main-nav a").forEach((link) => link.addEventListener
 document.querySelector(".checkout-open").addEventListener("click", () => {
   drawer.classList.remove("open");
   checkoutModal.classList.add("open");
+  if (staticHosting) {
+    document.querySelector("#static-hosting-note").hidden = false;
+    form.querySelector(".submit-order").disabled = true;
+  }
 });
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
+  if (staticHosting) return;
   if (!cart.length) return;
   const submitButton = form.querySelector(".submit-order");
   const formData = new FormData(form);
