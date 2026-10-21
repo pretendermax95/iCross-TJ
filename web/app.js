@@ -12,7 +12,7 @@ const formatPrice = (price) => `${price.toLocaleString("ru-RU")} смн`;
 let products = [];
 let activeFilter = "all";
 let cart = loadCart();
-let staticHosting = false;
+let staticHosting = location.hostname.endsWith(".github.io");
 
 function loadCart() {
   try {
@@ -32,24 +32,13 @@ function saveCart() {
 
 async function loadProducts() {
   try {
-    const response = await fetch("./api/products");
-    if (response.ok) {
-      products = await response.json();
-    } else {
-      throw new Error("Каталог загружен из статичной версии");
+    let response = await fetch(staticHosting ? "./products.json" : "./api/products");
+    if (!response.ok && !staticHosting) {
+      response = await fetch("./products.json");
+      staticHosting = response.ok && location.hostname.endsWith(".github.io");
     }
-  } catch {
-    try {
-      const response = await fetch("./products.json");
-      if (!response.ok) throw new Error("Не удалось загрузить каталог");
-      products = await response.json();
-      staticHosting = location.hostname.endsWith(".github.io");
-    } catch (error) {
-      grid.innerHTML = `<p class="empty-results">${error.message}. Обновите страницу.</p>`;
-      return;
-    }
-  }
-  try {
+    if (!response.ok) throw new Error("Не удалось загрузить каталог");
+    products = await response.json();
     renderProducts();
     renderCart();
   } catch (error) {
