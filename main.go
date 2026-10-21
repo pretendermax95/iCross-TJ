@@ -48,7 +48,7 @@ type OrderResponse struct {
 
 var products = []Product{
 	{1, "Air Max Pulse", "Nike", "running", 1290, 1490, "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85", "ХИТ", []string{"#f5533d", "#171717"}, []int{39, 40, 41, 42, 43, 44}},
-	{2, "Campus 00s", "Adidas", "lifestyle", 990, 1190, "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85", "−17%", []string{"#e8c99b", "#343434"}, []int{38, 39, 40, 41, 42, 43}},
+	{2, "Campus 00s", "Adidas", "lifestyle", 990, 1190, "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=85", "−17%", []string{"#e8c99b", "#343434"}, []int{38, 39, 40, 41, 42, 43}},
 	{3, "574 Core", "New Balance", "lifestyle", 1150, 0, "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=900&q=85", "НОВИНКА", []string{"#8a9aaa", "#7f9875"}, []int{39, 40, 41, 42, 43, 44, 45}},
 	{4, "Dunk Low Retro", "Nike", "lifestyle", 1390, 1590, "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85", "", []string{"#e8e3d7", "#496288"}, []int{38, 39, 40, 41, 42, 43}},
 	{5, "Ultraboost Light", "Adidas", "running", 1690, 0, "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=900&q=85", "ПРЕМИУМ", []string{"#292929", "#e6e6e6"}, []int{40, 41, 42, 43, 44, 45}},
