@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ee">
+  <meta name="description" content="iCross TJ — оригинальные кроссовки с доставкой по Таджикистану. Выбирай свою пару.">
+  <title>iCross TJ — кроссовки твоего ритма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">Доставка по Худжанду бесплатно при заказе от 1 500 смн <span>↗</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="iCross TJ — на главную">i<span>Cross</span><small>TJ</small></a>
+    <nav class="main-nav" aria-label="Главная навигация">
+      <a href="#catalog">Каталог</a><a href="#story">О нас</a><a href="#benefits">Доставка и оплата</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Найти кроссовки"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="cart-button" id="cart-open"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span>Корзина</span><b id="cart-count">0</b></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> ТВОЙ ГОРОД. ТВОЙ РИТМ.</p>
+        <h1>Пара, которая<br>двигает <em>вперёд.</em></h1>
+        <p class="hero-copy">Кроссовки для больших планов и обычных понедельников. Выбирай свои — остальное мы берём на себя.</p>
+        <a class="button button-dark" href="#catalog">Выбрать пару <span>↗</span></a>
+        <div class="hero-note"><div class="avatar-stack"><i>А</i><i>М</i><i>Ф</i></div><span><strong>1 200+</strong> довольных шагов</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stamp">WALK<br>YOUR<br>WAY</div>
+        <div class="hero-circle"></div>
+        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1300&q=90" alt="Стильные кроссовки для города">
+        <div class="hero-product-card"><span>ВЫБОР НЕДЕЛИ</span><strong>Nike Dunk Low</strong><b>от 1 390 смн <i>↗</i></b></div>
+        <span class="hero-index">01 — 04</span>
+      </div>
+      <div class="hero-bottom"><span>ДУШАНБЕ · ДОСТАВКА ПО ВСЕМУ ТАДЖИКИСТАНУ</span><a href="#catalog">Листай вниз <span>↓</span></a></div>
+    </section>
+
+    <section class="trust-row" id="benefits">
+      <div><span class="trust-icon">✳</span><p><strong>Только оригинал</strong><small>Проверяем каждую пару</small></p></div>
+      <div><span class="trust-icon">↗</span><p><strong>Доставка 1–3 дня</strong><small>По всему Таджикистану</small></p></div>
+      <div><span class="trust-icon">↺</span><p><strong>Обмен без проблем</strong><small>Если не подошёл размер</small></p></div>
+      <div><span class="trust-icon">♡</span><p><strong>Подберём твою пару</strong><small>Напиши — поможем выбрать</small></p></div>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">НАЙДИ СВОИ</p><h2>Свежие пары<span>.</span></h2></div>
+        <p class="section-description">На каждый день, темп и настроение.<br>Никакого лишнего — только то, что хочется носить.</p>
+      </div>
+      <div class="catalog-controls">
+        <div class="filter-tabs" role="group" aria-label="Фильтр по категории">
+          <button class="filter-tab active" data-filter="all">Все пары <span>08</span></button>
+          <button class="filter-tab" data-filter="running">Для бега</button>
+          <button class="filter-tab" data-filter="lifestyle">На каждый день</button>
+        </div>
+        <label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" placeholder="Найти пару..." aria-label="Поиск по каталогу"></label>
+        <select id="brand-filter" aria-label="Фильтр по бренду"><option value="all">Все бренды</option><option>Nike</option><option>Adidas</option><option>New Balance</option></select>
+      </div>
+      <div class="product-grid" id="product-grid"><div class="loading">Загружаем свежие пары...</div></div>
+      <div class="catalog-footer"><span>Нужна помощь с размером?</span><a href="https://wa.me/" target="_blank" rel="noreferrer">Напиши нам в WhatsApp ↗</a></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1100&q=85" alt="Городской стиль и кроссовки"><span>С 2021 · ДУШАНБЕ</span></div>
+      <div class="story-copy"><p class="eyebrow">НЕ ПРОСТО ОБУВЬ</p><h2>Хорошие вещи<br>начинаются<br>с <em>первого шага.</em></h2><p>iCross TJ — место, где выбирают не просто кроссовки, а ощущение. Мы собираем оригинальные модели, которые будут с тобой в городе, в дороге и во всех планах, которые ещё впереди.</p><a href="#catalog" class="text-link">Найти свою пару <span>↗</span></a><div class="story-counter"><strong>4<span>+</span></strong><small>года на одной<br>волне с городом</small></div></div>
+    </section>
+
+    <section class="cta-banner"><div><p class="eyebrow">НЕ ПРОПУСТИ НОВОЕ</p><h2>Следи за движением.</h2><p>Новые дропы и специальные предложения — у нас в Instagram.</p></div><a href="https://instagram.com/" target="_blank" rel="noreferrer" class="button button-light">Мы в Instagram <span>↗</span></a><div class="cta-scribble">iC.</div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#">i<span>Cross</span><small>TJ</small></a><p>Хорошие вещи начинаются с первого шага.</p><div><a href="#catalog">Каталог</a><a href="#benefits">Доставка и оплата</a><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div><small>© 2026 iCross TJ · Худжанд, Таджикистан</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Корзина">
+    <div class="drawer-heading"><div><p class="eyebrow">ТВОЙ ВЫБОР</p><h2>Корзина <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="cart-close" aria-label="Закрыть">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>◌</span><strong>Пока здесь пусто</strong><p>Самое время найти пару по душе.</p><button class="text-link" id="continue-shopping">Перейти в каталог ↗</button></div>
+    <div class="cart-summary" id="cart-summary"><div><span>Итого</span><strong id="cart-total">0 смн</strong></div><button class="button button-dark checkout-open">Оформить заказ <span>↗</span></button><small>Доставка рассчитывается при оформлении</small></div>
+  </aside>
+
+  <div class="modal-wrap" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+    <div class="checkout-modal"><button class="close-button modal-close" aria-label="Закрыть">×</button><div class="checkout-content"><p class="eyebrow">ПОСЛЕДНИЙ ШАГ</p><h2 id="checkout-title">Оформить заказ<span>.</span></h2><p class="modal-intro">Оставь контакты — мы подтвердим заказ и согласуем доставку.</p>
+      <form id="checkout-form">
+        <label>Как к тебе обращаться<input name="name" required placeholder="Твоё имя" autocomplete="name"></label>
+        <div class="form-row"><label>Номер телефона<input name="phone" required type="tel" placeholder="+992 900 00 00 00" autocomplete="tel"></label><label>Email <small>(необязательно)</small><input name="email" type="email" placeholder="you@email.com" autocomplete="email"></label></div>
+        <label>Адрес доставки<input name="address" required placeholder="Город, улица, дом" autocomplete="street-address"></label>
+        <label>Комментарий <small>(необязательно)</small><textarea name="comment" rows="2" placeholder="Удобное время или пожелания"></textarea></label>
+        <div class="checkout-total"><span>К оплате</span><strong id="checkout-total">0 смн</strong></div>
+        <button class="button button-dark submit-order" type="submit">Подтвердить заказ <span>↗</span></button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
