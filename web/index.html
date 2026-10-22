@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
   <div class="announcement">Доставка по Худжанду бесплатно при заказе от 500 смн <span>↗</span></div>
@@ -69,6 +69,16 @@
       <div class="catalog-footer"><span>Нужна помощь с размером?</span><a href="https://wa.me/" target="_blank" rel="noreferrer">Напиши нам в WhatsApp ↗</a></div>
     </section>
 
+    <section class="wholesale-banner" aria-labelledby="wholesale-heading">
+      <div class="wholesale-banner-copy">
+        <p class="eyebrow">ДЛЯ МАГАЗИНОВ И КОМАНД</p>
+        <h2 id="wholesale-heading">Планируете закупку?</h2>
+        <p>Подготовим оптовое предложение под ваш ассортимент и количество.</p>
+      </div>
+      <button class="wholesale-cta" id="wholesale-open" type="button">Оптовый заказ <span>↗</span></button>
+      <span class="wholesale-decoration" aria-hidden="true">iC.</span>
+    </section>
+
     <section class="story-section" id="story">
       <div class="story-image"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1100&q=85" alt="Городской стиль и кроссовки"></div>
       <div class="story-copy"><p class="eyebrow">НЕ ПРОСТО ОБУВЬ</p><h2>Хорошие вещи<br>начинаются<br>с <em>первого шага.</em></h2><p>iCross TJ — место, где выбирают не просто кроссовки, а ощущение. Мы собираем оригинальные модели, которые будут с тобой в городе, в дороге и во всех планах, которые ещё впереди.</p><a href="#catalog" class="text-link">Найти свою пару <span>↗</span></a><div class="story-counter"><strong>4<span>+</span></strong><small>года на одной<br>волне с городом</small></div></div>
@@ -99,6 +109,25 @@
       </form>
     </div>
   </div>
-  <script src="./app.js?v=7" defer></script>
+  <div class="modal-wrap" id="wholesale-modal" role="dialog" aria-modal="true" aria-labelledby="wholesale-title">
+    <div class="wholesale-modal">
+      <button class="close-button" id="wholesale-close" aria-label="Закрыть">×</button>
+      <p class="eyebrow">ДЛЯ МАГАЗИНОВ И КОМАНД</p>
+      <h2 id="wholesale-title">Оптовый заказ<span>.</span></h2>
+      <p class="wholesale-intro">Расскажите, какие пары и в каком количестве вам нужны.</p>
+      <form class="wholesale-form" id="wholesale-form">
+        <label>Ваше имя<input name="name" required autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label>Номер телефона<input name="phone" required type="tel" autocomplete="tel" placeholder="+992 900 00 00 00"></label>
+        <label>Магазин или компания <small>(необязательно)</small><input name="company" placeholder="Название магазина"></label>
+        <label>Какие модели или бренды интересуют?<textarea name="products" required rows="2" placeholder="Например: Nike Air Force 1, размеры 40–44"></textarea></label>
+        <label>Количество пар<input name="quantity" required type="number" min="2" max="500" step="1" placeholder="От 2 пар"></label>
+        <label>Комментарий <small>(необязательно)</small><textarea name="comment" rows="3" placeholder="Цвета, размеры и другие пожелания"></textarea></label>
+        <p class="wholesale-notice">Откроется письмо на pretendermax@gmail.com с заполненной заявкой. Проверьте и отправьте его из своего почтового приложения.</p>
+        <button class="button button-dark wholesale-submit" type="submit">Подготовить заявку <span>↗</span></button>
+        <p class="wholesale-form-message" id="wholesale-form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+  <script src="./app.js?v=8" defer></script>
 </body>
 </html>
