@@ -20,6 +20,7 @@
     </nav>
     <div class="header-actions">
       <button class="icon-button search-toggle" aria-label="Найти кроссовки"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="wholesale-button" id="wholesale-open">Оптовый заказ <span>↗</span></button>
       <button class="cart-button" id="cart-open"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span>Корзина</span><b id="cart-count">0</b></button>
       <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню"><span></span><span></span></button>
     </div>
@@ -99,6 +100,14 @@
       </form>
     </div>
   </div>
-  <script src="./app.js?v=3" defer></script>
+  <div class="modal-wrap" id="wholesale-modal" role="dialog" aria-modal="true" aria-labelledby="wholesale-title">
+    <div class="wholesale-modal">
+      <button class="close-button" id="wholesale-close" aria-label="Закрыть">×</button>
+      <p class="eyebrow">ДЛЯ МАГАЗИНОВ И КОМАНД</p>
+      <h2 id="wholesale-title">Оптовый заказ<span>.</span></h2>
+      <p>Мы готовим оформление оптовых заказов. Скоро добавим удобную связь для расчёта ассортимента и условий.</p>
+    </div>
+  </div>
+  <script src="./app.js?v=4" defer></script>
 </body>
 </html>

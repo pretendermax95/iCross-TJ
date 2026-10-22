@@ -6,6 +6,7 @@ const drawerCount = document.querySelector("#drawer-count");
 const overlay = document.querySelector("#overlay");
 const drawer = document.querySelector("#cart-drawer");
 const checkoutModal = document.querySelector("#checkout-modal");
+const wholesaleModal = document.querySelector("#wholesale-modal");
 const form = document.querySelector("#checkout-form");
 const formMessage = document.querySelector("#form-message");
 const formatPrice = (price) => `${price.toLocaleString("ru-RU")} смн`;
@@ -107,6 +108,7 @@ function closePanels() {
   drawer.classList.remove("open");
   overlay.classList.remove("open");
   checkoutModal.classList.remove("open");
+  wholesaleModal.classList.remove("open");
   document.body.classList.remove("no-scroll");
 }
 
@@ -180,6 +182,11 @@ document.querySelector("#continue-shopping").addEventListener("click", () => {
 });
 overlay.addEventListener("click", closePanels);
 document.querySelector(".modal-close").addEventListener("click", closePanels);
+document.querySelector("#wholesale-open").addEventListener("click", () => {
+  wholesaleModal.classList.add("open");
+  document.body.classList.add("no-scroll");
+});
+document.querySelector("#wholesale-close").addEventListener("click", closePanels);
 document.querySelector("#menu-toggle").addEventListener("click", () =>
   document.querySelector(".main-nav").classList.toggle("open"));
 document.querySelectorAll(".main-nav a").forEach((link) => link.addEventListener("click", () =>
