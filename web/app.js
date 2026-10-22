@@ -192,7 +192,23 @@ document.querySelector("#wholesale-close").addEventListener("click", closePanels
 wholesaleForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!wholesaleForm.reportValidity()) return;
-  wholesaleFormMessage.textContent = "Форма заполнена, но заявка не отправлена: канал связи пока не подключён.";
+  const values = new FormData(wholesaleForm);
+  const fields = [
+    ["Имя", values.get("name")],
+    ["Телефон", values.get("phone")],
+    ["Магазин или компания", values.get("company") || "Не указано"],
+    ["Модели и бренды", values.get("products")],
+    ["Количество пар", values.get("quantity")],
+    ["Комментарий", values.get("comment") || "Нет"],
+  ];
+  const body = ["Оптовая заявка iCross TJ", "", ...fields.map(([label, value]) => `${label}: ${value}`)].join("\n");
+  const email = document.createElement("a");
+  email.href = `mailto:pretendermax@gmail.com?subject=${encodeURIComponent("Оптовая заявка iCross TJ")}&body=${encodeURIComponent(body)}`;
+  email.hidden = true;
+  document.body.append(email);
+  email.click();
+  email.remove();
+  wholesaleFormMessage.textContent = "Откройте подготовленное письмо в почтовом приложении, проверьте заявку и нажмите «Отправить».";
 });
 document.querySelector("#menu-toggle").addEventListener("click", () =>
   document.querySelector(".main-nav").classList.toggle("open"));
