@@ -6,28 +6,3 @@
 @media(max-width:700px){.size-picker{left:7px;right:7px;bottom:43px;padding:8px;gap:4px}.size-option{min-width:27px;height:25px}}
 .static-hosting-note{padding:12px;background:#fff5e5;color:#776034;font-size:10px;line-height:1.6}
 .submit-order:disabled{cursor:not-allowed;opacity:.6;transform:none}
-.wholesale-banner{position:relative;overflow:hidden;margin:0 7.3% 75px;padding:43px 5%;min-height:210px;background:#242720;color:#fffefa;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.wholesale-banner-copy{position:relative;z-index:1}
-.wholesale-banner .eyebrow{color:#d8ef72;margin-bottom:12px}
-.wholesale-banner h2{font:700 clamp(26px,3.5vw,39px)/1.15 var(--display);letter-spacing:-.055em;margin:0}
-.wholesale-banner-copy>p:last-child{font-size:11px;line-height:1.7;color:#c1c2ba;max-width:390px;margin:12px 0 0}
-.wholesale-cta{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:space-between;gap:42px;min-width:235px;min-height:62px;padding:0 22px;border:0;background:var(--lime);color:var(--ink);font:700 13px var(--display);cursor:pointer;transition:transform .2s,background .2s}
-.wholesale-cta:hover{transform:translateY(-3px);background:#e2f797}
-.wholesale-cta span{font-size:22px}
-.wholesale-decoration{position:absolute;right:26%;top:-84px;color:#2e3328;font:800 235px var(--display);letter-spacing:-.14em;transform:rotate(-10deg);pointer-events:none}
-.wholesale-modal{position:relative;width:min(480px,100%);max-height:92vh;overflow:auto;padding:38px;background:var(--paper)}
-.wholesale-modal .close-button{position:absolute;right:18px;top:18px}
-.wholesale-modal .eyebrow{margin-bottom:11px}
-.wholesale-modal h2{font:700 27px var(--display);letter-spacing:-.05em;margin:0}
-.wholesale-modal h2 span{color:#94a94b}
-.wholesale-intro{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 19px}
-.wholesale-form{display:grid;gap:12px}
-.wholesale-form label{display:flex;flex-direction:column;gap:6px;font-size:9px;font-weight:700}
-.wholesale-form label small{font-size:8px;font-weight:400;color:#85867e}
-.wholesale-form input,.wholesale-form textarea{width:100%;border:1px solid #e0dfd7;background:#fbfaf6;padding:11px 12px;outline:none;font-size:10px;font-weight:400;resize:vertical}
-.wholesale-form input:focus,.wholesale-form textarea:focus{border-color:#9aab5d}
-.wholesale-notice{margin:0;padding:10px;background:#fff5e5;color:#776034;font-size:9px;line-height:1.6}
-.wholesale-submit{width:100%;justify-content:center}
-.wholesale-form-message{margin:0;color:#776034;font-size:10px;line-height:1.6}
-@media(max-width:1000px){.wholesale-banner{margin-left:5%;margin-right:5%}}
-@media(max-width:700px){.wholesale-banner{margin:0 20px 42px;padding:28px 23px;min-height:0;align-items:flex-start;gap:22px;flex-direction:column}.wholesale-banner h2{font-size:29px}.wholesale-banner-copy>p:last-child{font-size:10px}.wholesale-cta{width:100%;min-height:56px;font-size:12px}.wholesale-decoration{right:-3%;top:-40px;font-size:150px}.wholesale-modal{padding:34px 22px}.wholesale-form{gap:10px}}
