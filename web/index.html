@@ -20,7 +20,6 @@
     </nav>
     <div class="header-actions">
       <button class="icon-button search-toggle" aria-label="Найти кроссовки"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
-      <button class="wholesale-button" id="wholesale-open">Оптовый заказ <span>↗</span></button>
       <button class="cart-button" id="cart-open"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span>Корзина</span><b id="cart-count">0</b></button>
       <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню"><span></span><span></span></button>
     </div>
@@ -100,25 +99,6 @@
       </form>
     </div>
   </div>
-  <div class="modal-wrap" id="wholesale-modal" role="dialog" aria-modal="true" aria-labelledby="wholesale-title">
-    <div class="wholesale-modal">
-      <button class="close-button" id="wholesale-close" aria-label="Закрыть">×</button>
-      <p class="eyebrow">ДЛЯ МАГАЗИНОВ И КОМАНД</p>
-      <h2 id="wholesale-title">Оптовый заказ<span>.</span></h2>
-      <p class="wholesale-intro">Заполните форму — мы учтём пожелания по моделям и количеству.</p>
-      <form class="wholesale-form" id="wholesale-form">
-        <label>Ваше имя<input name="name" required autocomplete="name" placeholder="Как к вам обращаться"></label>
-        <label>Номер телефона<input name="phone" required type="tel" autocomplete="tel" placeholder="+992 900 00 00 00"></label>
-        <label>Магазин или компания <small>(необязательно)</small><input name="company" placeholder="Название магазина"></label>
-        <label>Какие модели или бренды интересуют?<textarea name="products" required rows="2" placeholder="Например: Nike Air Force 1, размеры 40–44"></textarea></label>
-        <label>Количество пар<input name="quantity" required type="number" min="2" max="500" step="1" placeholder="От 2 пар"></label>
-        <label>Комментарий <small>(необязательно)</small><textarea name="comment" rows="3" placeholder="Цвета, размеры и другие пожелания"></textarea></label>
-        <p class="wholesale-notice">После заполнения откроется письмо на pretendermax@gmail.com. Проверьте и отправьте его в своём почтовом приложении.</p>
-        <button class="button button-dark wholesale-submit" type="submit">Отправить заявку по email <span>↗</span></button>
-        <p class="wholesale-form-message" id="wholesale-form-message" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-  <script src="./app.js?v=6" defer></script>
+  <script src="./app.js?v=7" defer></script>
 </body>
 </html>
