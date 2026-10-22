@@ -32,9 +32,9 @@ function saveCart() {
 
 async function loadProducts() {
   try {
-    let response = await fetch(staticHosting ? "./products.json?v=2" : "./api/products");
+    let response = await fetch(staticHosting ? "./products.json?v=3" : "./api/products");
     if (!response.ok && !staticHosting) {
-      response = await fetch("./products.json?v=2");
+      response = await fetch("./products.json?v=3");
       staticHosting = response.ok && location.hostname.endsWith(".github.io");
     }
     if (!response.ok) throw new Error("Не удалось загрузить каталог");

@@ -48,12 +48,12 @@ type OrderResponse struct {
 
 var products = []Product{
 	{1, "Air Max Pulse", "Nike", "running", 1290, 1490, "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85", "ХИТ", []string{"#f5533d", "#171717"}, []int{39, 40, 41, 42, 43, 44}},
-	{2, "Campus 00s", "Adidas", "lifestyle", 990, 1190, "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=85", "−17%", []string{"#e8c99b", "#343434"}, []int{38, 39, 40, 41, 42, 43}},
+	{2, "Air Force 1 '07", "Nike", "lifestyle", 990, 1190, "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=85", "−17%", []string{"#e8c99b", "#343434"}, []int{38, 39, 40, 41, 42, 43}},
 	{3, "574 Core", "New Balance", "lifestyle", 1150, 0, "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=900&q=85", "НОВИНКА", []string{"#8a9aaa", "#7f9875"}, []int{39, 40, 41, 42, 43, 44, 45}},
 	{4, "Dunk Low Retro", "Nike", "lifestyle", 1390, 1590, "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85", "", []string{"#e8e3d7", "#496288"}, []int{38, 39, 40, 41, 42, 43}},
 	{5, "Ultraboost Light", "Adidas", "running", 1690, 0, "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=900&q=85", "ПРЕМИУМ", []string{"#292929", "#e6e6e6"}, []int{40, 41, 42, 43, 44, 45}},
 	{6, "574 Legacy", "New Balance", "lifestyle", 1250, 0, "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85", "", []string{"#d1b59b", "#707d87"}, []int{39, 40, 41, 42, 43}},
-	{7, "Air Force 1 '07", "Nike", "lifestyle", 1450, 1650, "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=85", "−12%", []string{"#f2f0ea", "#222222"}, []int{38, 39, 40, 41, 42, 43, 44}},
+	{7, "Air Max", "Nike", "lifestyle", 1450, 1650, "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=85", "−12%", []string{"#f2f0ea", "#222222"}, []int{38, 39, 40, 41, 42, 43, 44}},
 	{8, "Forum Low", "Adidas", "lifestyle", 1090, 0, "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=85", "", []string{"#e5e1d6", "#a45f47"}, []int{39, 40, 41, 42, 43, 44}},
 }
 

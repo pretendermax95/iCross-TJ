@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "name": "Campus 00s",
-    "brand": "Adidas",
+    "name": "Air Force 1 '07",
+    "brand": "Nike",
     "category": "lifestyle",
     "price": 990,
     "oldPrice": 1190,
@@ -68,7 +68,7 @@
   },
   {
     "id": 7,
-    "name": "Air Force 1 '07",
+    "name": "Air Max",
     "brand": "Nike",
     "category": "lifestyle",
     "price": 1450,
