@@ -7,6 +7,8 @@ const overlay = document.querySelector("#overlay");
 const drawer = document.querySelector("#cart-drawer");
 const checkoutModal = document.querySelector("#checkout-modal");
 const wholesaleModal = document.querySelector("#wholesale-modal");
+const wholesaleForm = document.querySelector("#wholesale-form");
+const wholesaleFormMessage = document.querySelector("#wholesale-form-message");
 const form = document.querySelector("#checkout-form");
 const formMessage = document.querySelector("#form-message");
 const formatPrice = (price) => `${price.toLocaleString("ru-RU")} смн`;
@@ -187,6 +189,11 @@ document.querySelector("#wholesale-open").addEventListener("click", () => {
   document.body.classList.add("no-scroll");
 });
 document.querySelector("#wholesale-close").addEventListener("click", closePanels);
+wholesaleForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!wholesaleForm.reportValidity()) return;
+  wholesaleFormMessage.textContent = "Форма заполнена, но заявка не отправлена: канал связи пока не подключён.";
+});
 document.querySelector("#menu-toggle").addEventListener("click", () =>
   document.querySelector(".main-nav").classList.toggle("open"));
 document.querySelectorAll(".main-nav a").forEach((link) => link.addEventListener("click", () =>

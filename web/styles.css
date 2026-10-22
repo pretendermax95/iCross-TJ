@@ -22,5 +22,5 @@
 .wholesale-form input:focus,.wholesale-form textarea:focus{border-color:#9aab5d}
 .wholesale-notice{margin:0;padding:10px;background:#fff5e5;color:#776034;font-size:9px;line-height:1.6}
 .wholesale-submit{width:100%;justify-content:center}
-.wholesale-submit:disabled{cursor:not-allowed;opacity:.55;transform:none}
+.wholesale-form-message{margin:0;color:#776034;font-size:10px;line-height:1.6}
 @media(max-width:700px){.header-actions{gap:9px}.wholesale-button{padding:8px 9px;font-size:9px;gap:5px}.wholesale-button span{font-size:12px}.wholesale-modal{padding:34px 22px}.wholesale-form{gap:10px}}
