@@ -9,10 +9,18 @@
 .wholesale-button{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ink);background:transparent;color:var(--ink);padding:10px 13px;font-size:10px;font-weight:700;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s}
 .wholesale-button:hover{background:var(--ink);color:white}
 .wholesale-button span{font-size:14px}
-.wholesale-modal{position:relative;width:min(430px,100%);padding:38px;background:var(--paper)}
+.wholesale-modal{position:relative;width:min(480px,100%);max-height:92vh;overflow:auto;padding:38px;background:var(--paper)}
 .wholesale-modal .close-button{position:absolute;right:18px;top:18px}
 .wholesale-modal .eyebrow{margin-bottom:11px}
 .wholesale-modal h2{font:700 27px var(--display);letter-spacing:-.05em;margin:0}
 .wholesale-modal h2 span{color:#94a94b}
-.wholesale-modal>p:last-child{font-size:12px;line-height:1.8;color:var(--muted);margin:14px 0 0}
-@media(max-width:700px){.header-actions{gap:9px}.wholesale-button{padding:8px 9px;font-size:9px;gap:5px}.wholesale-button span{font-size:12px}.wholesale-modal{padding:34px 25px}}
+.wholesale-intro{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 19px}
+.wholesale-form{display:grid;gap:12px}
+.wholesale-form label{display:flex;flex-direction:column;gap:6px;font-size:9px;font-weight:700}
+.wholesale-form label small{font-size:8px;font-weight:400;color:#85867e}
+.wholesale-form input,.wholesale-form textarea{width:100%;border:1px solid #e0dfd7;background:#fbfaf6;padding:11px 12px;outline:none;font-size:10px;font-weight:400;resize:vertical}
+.wholesale-form input:focus,.wholesale-form textarea:focus{border-color:#9aab5d}
+.wholesale-notice{margin:0;padding:10px;background:#fff5e5;color:#776034;font-size:9px;line-height:1.6}
+.wholesale-submit{width:100%;justify-content:center}
+.wholesale-submit:disabled{cursor:not-allowed;opacity:.55;transform:none}
+@media(max-width:700px){.header-actions{gap:9px}.wholesale-button{padding:8px 9px;font-size:9px;gap:5px}.wholesale-button span{font-size:12px}.wholesale-modal{padding:34px 22px}.wholesale-form{gap:10px}}

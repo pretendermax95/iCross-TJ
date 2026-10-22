@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=2">
 </head>
 <body>
   <div class="announcement">Доставка по Худжанду бесплатно при заказе от 500 смн <span>↗</span></div>
@@ -105,7 +105,17 @@
       <button class="close-button" id="wholesale-close" aria-label="Закрыть">×</button>
       <p class="eyebrow">ДЛЯ МАГАЗИНОВ И КОМАНД</p>
       <h2 id="wholesale-title">Оптовый заказ<span>.</span></h2>
-      <p>Мы готовим оформление оптовых заказов. Скоро добавим удобную связь для расчёта ассортимента и условий.</p>
+      <p class="wholesale-intro">Заполните форму — мы учтём пожелания по моделям и количеству.</p>
+      <form class="wholesale-form" id="wholesale-form">
+        <label>Ваше имя<input name="name" required autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label>Номер телефона<input name="phone" required type="tel" autocomplete="tel" placeholder="+992 900 00 00 00"></label>
+        <label>Магазин или компания <small>(необязательно)</small><input name="company" placeholder="Название магазина"></label>
+        <label>Какие модели или бренды интересуют?<textarea name="products" required rows="2" placeholder="Например: Nike Air Force 1, размеры 40–44"></textarea></label>
+        <label>Количество пар<input name="quantity" required type="number" min="2" max="500" step="1" placeholder="От 2 пар"></label>
+        <label>Комментарий <small>(необязательно)</small><textarea name="comment" rows="3" placeholder="Цвета, размеры и другие пожелания"></textarea></label>
+        <p class="wholesale-notice">Форма пока не отправляет заказ. Подключим приём заявок, когда настроим WhatsApp.</p>
+        <button class="button button-dark wholesale-submit" type="submit" disabled>Отправка скоро</button>
+      </form>
     </div>
   </div>
   <script src="./app.js?v=4" defer></script>
